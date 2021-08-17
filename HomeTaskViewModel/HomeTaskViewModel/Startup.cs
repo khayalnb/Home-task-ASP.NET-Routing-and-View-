@@ -33,7 +33,7 @@ namespace HomeTaskViewModel
             {
                 endpoints.MapControllerRoute(
                     "default",
-                    "{controller=Home}/{action=Index;}");
+                    "{controller=Home}/{action=Index}");
             });
         }
     }

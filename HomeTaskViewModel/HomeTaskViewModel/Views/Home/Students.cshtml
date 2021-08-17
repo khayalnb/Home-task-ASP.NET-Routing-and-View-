@@ -1,0 +1,25 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h1>@Model.Learn</h1>
+
+<h2>Teleblerin listi:</h2>
+<ul>
+    @foreach (Student student in Model.Students)
+    {
+        <li>@student.Id @student.Name @student.Surname</li>
+    }
+
+</ul>
+
+<h2>Masinlarin listi:</h2>
+<ul>
+    @foreach (Car car in Model.Cars)
+    {
+        <li>@car.Id @car.Marka @car.Model</li>
+    }
+
+</ul>
+
